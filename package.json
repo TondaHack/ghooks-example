@@ -9,7 +9,8 @@
   "config": {
     "ghooks": {
       "pre-commit": "yarn test",
-      "pre-push": "yarn run health-check"
+      "pre-push": "yarn run health-check",
+      "post-merge": "./post-merge-npm-install-githook.sh"
     }
   },
   "author": "",
