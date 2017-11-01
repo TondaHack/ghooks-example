@@ -1,18 +1,22 @@
 {
-  "name": "test",
+  "name": "git-hooks-example",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "echo": "echo \"Everything is ok\""
   },
   "config": {
     "ghooks": {
-      "pre-commit": "yarn test",
-      "pre-push": "yarn run health-check",
-      "post-merge": "./post-merge-npm-install-githook.sh"
+      "pre-commit": "yarn echo",
+      "pre-push": "yarn echo",
+      "post-merge": "yarn echo"
     }
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ghooks": "^2.0.0"
+  }
 }
