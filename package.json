@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "precommit": "yarn echo",
-    "prepush": "yarn test",
+    "prepush": "./bash.sh",
     "test": "echo \"Error: no test specified\" && exit 1",
     "echo": "echo \"Everything is ok\""
   },
