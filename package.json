@@ -4,19 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "precommit": "yarn echo",
+    "prepush": "yarn test",
     "test": "echo \"Error: no test specified\" && exit 1",
     "echo": "echo \"Everything is ok\""
-  },
-  "config": {
-    "ghooks": {
-      "pre-commit": "yarn echo",
-      "pre-push": "yarn echo",
-      "post-merge": "yarn echo"
-    }
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ghooks": "^2.0.0"
+    "husky": "^0.14.3"
   }
 }
